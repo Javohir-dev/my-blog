@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.name_link {
+    color: green;
+}
+.name_link:hover {
+    color: red;
+}
