@@ -1,10 +1,176 @@
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    cursor: pointer;
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #292929;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff000;
+}
+
+*::selection {
+    background: #000000;
+    color: #fff000;
+}
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
+    scroll-behavior: smooth;
 }
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*! ========================================================================================================================================== */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_my {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
 .name_link {
-    color: green;
+    padding: 4px 10px;
+    color: #00a2ff;
+    display: inline-block;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: .2s;
 }
+
 .name_link:hover {
     color: red;
+}
+
+.card {
+    width: 400px;
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: left !important;
+    border: 1px solid #000;
+}
+
+.card h2 a {
+    padding: 10px 20px;
+    color: #000;
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #fff000;
+}
+
+.card:hover h2 a {
+    color: #003cff !important;
+}
+
+.card p {
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+    color: #000;
+    display: block;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #dcf4ff;
+}
+
+/* ! news page================ */
+.news_post {
+    padding: 10px 10px;
+    display: block !important;
+    cursor: pointer;
+}
+.title {
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.author {
+    padding: 6px 10px;
+    color: #00aeff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.user_icon {
+    padding-right: 10px;
+    color: #000;
+}
+
+.news {
+    padding: 5px;
+    font-family: sans-serif;
+    line-height: 2;
 }

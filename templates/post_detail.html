@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="post-entry">
-        <h2>{{ post.title }}</h2>
-        <h3>{{ post.author }}</h3>
-        <p>{{ post.body }}</p>
+    <div class="post-entry news_post">
+        <h3 class="author" title="{{ post.author }}">
+            <i class="bi bi-person-fill user_icon"></i>
+            {{ post.author }}
+        </h3>
+        <h2 class="title">{{ post.title }}</h2>
+        <p class="news">{{ post.body }}</p>
     </div>
 {% endblock content %}
