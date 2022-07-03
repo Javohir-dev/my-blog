@@ -24,7 +24,6 @@ html::-webkit-scrollbar-thumb {
 * {
     padding: 0;
     margin: 0;
-    border: 0;
     scroll-behavior: smooth;
 }
 
@@ -150,11 +149,13 @@ img {
     display: block !important;
     cursor: pointer;
 }
+
 .title {
     font-family: sans-serif;
     font-weight: 600;
 
 }
+
 .author {
     padding: 6px 10px;
     color: #00aeff;
@@ -164,6 +165,7 @@ img {
     font-family: sans-serif;
     text-transform: uppercase;
 }
+
 .user_icon {
     padding-right: 10px;
     color: #000;
@@ -173,4 +175,28 @@ img {
     padding: 5px;
     font-family: sans-serif;
     line-height: 2;
+}
+
+/* ! POST_NEW============================== */
+.post_new_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.post_new_container>form {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+#id_body {
+    display: block;
+}
+
+#id_title {
+    display: block;
+}
+
+#id_author {
+    display: block;
 }

@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,5 +19,8 @@
     <main class="container_my">
       <div class="flex-box">{% block content %} {% endblock content %}</div>
     </main>
+    <footer>
+      <h2><a href="{% url 'post_new' %}">Yangi Post yozish</a></h2>
+    </footer>
   </body>
 </html>

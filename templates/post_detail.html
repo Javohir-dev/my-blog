@@ -9,4 +9,12 @@
         <h2 class="title">{{ post.title }}</h2>
         <p class="news">{{ post.body }}</p>
     </div>
+    <div>
+        <p>
+            <a href="{% url 'post_edit' post.pk %}">Postni tahrirlash</a>
+        </p>
+        <p>
+            <a href="{% url 'post_delete' post.pk %}">Postni o'chirish</a>
+        </p>
+    </div>
 {% endblock content %}
